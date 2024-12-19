@@ -23,6 +23,7 @@ httpServer(+PORT)
 
 
 
-
+//*.log
+//*qr.png
     
 main()

@@ -5,7 +5,7 @@ import { preciosFlow } from "./preciosFlow.js"
 import { contactoFlow } from "./contactoFlow.js"
 
 const welcomeFlow = addKeyword(EVENTS.WELCOME)
-.addAnswer('Holaaaaaaaaaa, bienvenidos a Breakers MMA🦁')
+.addAnswer('Hola, bienvenidos a Breakers MMA🦁')
 .addAnswer('Para informacion escribi menu')
 
 export {welcomeFlow}

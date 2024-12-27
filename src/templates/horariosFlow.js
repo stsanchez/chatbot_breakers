@@ -1,6 +1,11 @@
 import { addKeyword,EVENTS } from "@builderbot/bot"
+import path from 'path';
+import fs from 'fs';
+
+const horariosPath = path.join(process.cwd(), 'assets', 'mensajes', 'horarios.txt'); 
+const horarios = fs.readFileSync(horariosPath, 'utf-8');
 
 const horariosFlow = addKeyword(EVENTS.ACTION)
-.addAnswer('Aca tenes nuestros dias y horarios⏰:\nLunes a viernes de 10 a 22hs\nSábados de 10 a 14hs\nDomingos cerrado')
+.addAnswer(horarios)
 
 export {horariosFlow}

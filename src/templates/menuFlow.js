@@ -3,10 +3,14 @@ import { infoFlow } from "./infoFlow.js"
 import { horariosFlow } from "./horariosFlow.js"
 import { preciosFlow } from "./preciosFlow.js"
 import { contactoFlow } from "./contactoFlow.js"
+import path from 'path';
+import fs from 'fs';
 
+const menuPath = path.join(process.cwd(), 'assets', 'mensajes', 'menu.txt'); 
+const menu = fs.readFileSync(menuPath, 'utf-8');
 
 const menuFlow = addKeyword(['Menu','menu','Menú','menú'])
-.addAnswer('Elegi una de las opciones:\n1- Como son las clases\n2- Ver horarios y ubicaciones\n3- Ver precios\n4- Contacto',
+.addAnswer(menu,
     { capture: true },
     async (ctx, { gotoFlow, fallBack, flowDynamic }) => {
         if (!['1', '2', '3', '4'].includes(ctx.body)) {

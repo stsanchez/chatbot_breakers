@@ -1,6 +1,12 @@
 import { addKeyword,EVENTS } from "@builderbot/bot";
 
+import path from 'path';
+import fs from 'fs';
+
+const infoPath = path.join(process.cwd(), 'assets', 'mensajes', 'info.txt'); 
+const info = fs.readFileSync(infoPath, 'utf-8');
+
 const infoFlow = addKeyword(EVENTS.ACTION)
-.addAnswer('Somos una academia de MMA. Las clases son abiertas a todo el publico tanto recreativo como profesional\nTodos los dias se entrena la parte de musculacion, se hace aerobico, luego tecnica y luego sparring.')
+.addAnswer(info)
 
 export {infoFlow}

@@ -1,0 +1,15 @@
+El valor de la cuota adultos es:
+
+👉🏽Clase de prueba: $ 12.000 (Que se descuenta del plan mensual al suscribirse)
+
+👉🏽Una vez por semana: $38.000 mensual 
+
+👉🏽Dos veces por semana: $42.000 mensual
+
+👉🏽Tres veces por semana: $46.000 mensual 
+
+👉🏽Pase libre $50.000:  mensual
+
+👉🏽El valor de la cuota para niños hasta 12 años inclusive: $ 35.000
+
+Para volver a ver el menu escribi "Menu"
